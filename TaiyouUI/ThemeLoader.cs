@@ -42,10 +42,10 @@ namespace TaiyouUI
             return ThemeData[Key];
         }
 
-        public static void LoadDictData(string ThemeName, BackgroundWorker bgWorker = null)
+        public static void LoadDictData(string ThemeFilePath, BackgroundWorker bgWorker = null)
         {
             ThemeData.Clear();
-            CurrentThemeFile = Environment.CurrentDirectory + "\\themes\\" + ThemeName + ".txt";
+            CurrentThemeFile = ThemeFilePath;
 
             //DicData should be located at (./lang_bank/en-us)
             if (!File.Exists(CurrentThemeFile))
