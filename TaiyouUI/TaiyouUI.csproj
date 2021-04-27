@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeLoader.cs" />
+    <Compile Include="Utils.cs" />
     <Compile Include="Version.cs" />
   </ItemGroup>
   <ItemGroup>
