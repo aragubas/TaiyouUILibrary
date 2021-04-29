@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TabNotepadForm.cs">
+    <Compile Include="TaiyouForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TabNotepadForm.Designer.cs">
-      <DependentUpon>TabNotepadForm.cs</DependentUpon>
+    <Compile Include="TaiyouForm.Designer.cs">
+      <DependentUpon>TaiyouForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TaiyouUIMain.cs">
       <SubType>Component</SubType>
@@ -58,8 +58,8 @@
     <Compile Include="Version.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="TabNotepadForm.resx">
-      <DependentUpon>TabNotepadForm.cs</DependentUpon>
+    <EmbeddedResource Include="TaiyouForm.resx">
+      <DependentUpon>TaiyouForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

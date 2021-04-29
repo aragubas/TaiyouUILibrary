@@ -484,7 +484,7 @@ namespace TaiyouUI
 
     public class taiyouUserControl : UserControl
     {
-        public TabNotepadForm RootForm;
+        public TaiyouForm RootForm;
 
         public void LoadTheme()
         {

@@ -5,6 +5,6 @@ C:\Users\Bazinga\Documents\Projects\TNotepad\TaiyouUI\obj\Release\TaiyouUI.cspro
 C:\Users\Bazinga\Documents\Projects\TNotepad\TaiyouUI\obj\Release\TaiyouUI.dll
 C:\Users\Bazinga\Documents\Projects\TaiyouUILibrary\Bin\TaiyouUI.dll
 C:\Users\Bazinga\Documents\Projects\TaiyouUILibrary\TaiyouUI\obj\Release\TaiyouUI.csprojResolveAssemblyReference.cache
-C:\Users\Bazinga\Documents\Projects\TaiyouUILibrary\TaiyouUI\obj\Release\TaiyouUI.TabNotepadForm.resources
 C:\Users\Bazinga\Documents\Projects\TaiyouUILibrary\TaiyouUI\obj\Release\TaiyouUI.csproj.GenerateResource.Cache
 C:\Users\Bazinga\Documents\Projects\TaiyouUILibrary\TaiyouUI\obj\Release\TaiyouUI.dll
+C:\Users\Bazinga\Documents\Projects\TaiyouUILibrary\TaiyouUI\obj\Release\TaiyouUI.TaiyouForm.resources

@@ -10,7 +10,7 @@ namespace TaiyouUI
     {
         public static void CreateWindow(taiyouUserControl control, string DefaultTitle = "Untitled Window", bool ShowAsDialog = false)
         {
-            TabNotepadForm ParentForm = new TabNotepadForm();
+            TaiyouForm ParentForm = new TaiyouForm();
 
             // Add controls to the form
             control.RootForm = ParentForm;

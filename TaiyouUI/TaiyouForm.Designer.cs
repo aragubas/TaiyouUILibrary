@@ -17,7 +17,7 @@
 
 namespace TaiyouUI
 {
-    partial class TabNotepadForm
+    partial class TaiyouForm
     {
         /// <summary>
         /// Required designer variable.
@@ -50,8 +50,8 @@ namespace TaiyouUI
             this.FormMinimizeButton = new System.Windows.Forms.Button();
             this.FormMaximizeButton = new System.Windows.Forms.Button();
             this.FormCloseButton = new System.Windows.Forms.Button();
-            this.FormControls = new System.Windows.Forms.Panel();
             this.FormTitlebar = new TaiyouUI.MoveWindowLabel();
+            this.FormControls = new System.Windows.Forms.Panel();
             this.TitlebarPanel.SuspendLayout();
             this.WindowButtonsPanel.SuspendLayout();
             this.SuspendLayout();
@@ -134,6 +134,17 @@ namespace TaiyouUI
             this.FormCloseButton.UseVisualStyleBackColor = false;
             this.FormCloseButton.Click += new System.EventHandler(this.FormCloseButton_Click);
             // 
+            // FormTitlebar
+            // 
+            this.FormTitlebar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FormTitlebar.Font = new System.Drawing.Font("Arial", 10F);
+            this.FormTitlebar.Location = new System.Drawing.Point(0, 0);
+            this.FormTitlebar.Name = "FormTitlebar";
+            this.FormTitlebar.Size = new System.Drawing.Size(654, 26);
+            this.FormTitlebar.TabIndex = 0;
+            this.FormTitlebar.Text = "Untitled Window";
+            this.FormTitlebar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormControls
             // 
             this.FormControls.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -144,17 +155,6 @@ namespace TaiyouUI
             this.FormControls.Size = new System.Drawing.Size(657, 391);
             this.FormControls.TabIndex = 0;
             this.FormControls.Validated += new System.EventHandler(this.FormControls_Validated);
-            // 
-            // FormTitlebar
-            // 
-            this.FormTitlebar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTitlebar.Font = new System.Drawing.Font("Arial", 10F);
-            this.FormTitlebar.Location = new System.Drawing.Point(0, 0);
-            this.FormTitlebar.Name = "FormTitlebar";
-            this.FormTitlebar.Size = new System.Drawing.Size(654, 26);
-            this.FormTitlebar.TabIndex = 0;
-            this.FormTitlebar.Text = "TabNotepad";
-            this.FormTitlebar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TabNotepadForm
             // 
@@ -171,7 +171,7 @@ namespace TaiyouUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TabNotepadForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Untitled TabNotepad Form";
+            this.Text = "Untitled Window";
             this.Activated += new System.EventHandler(this.TabNotepadForm_Activated);
             this.Load += new System.EventHandler(this.TabNotepadForm_Load);
             this.ResizeBegin += new System.EventHandler(this.TabNotepadForm_ResizeBegin);

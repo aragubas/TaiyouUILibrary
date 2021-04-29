@@ -27,7 +27,7 @@ using System.Windows.Forms;
 
 namespace TaiyouUI
 {
-    public partial class TabNotepadForm : Form
+    public partial class TaiyouForm : Form
     {
         // Some Properties
         public bool ResizeableForm = true;
@@ -38,7 +38,7 @@ namespace TaiyouUI
         // Workaround
         private bool FocusAfterMinimizing = false;
 
-        public TabNotepadForm()
+        public TaiyouForm()
         {
             InitializeComponent();
             this.ResizeRedraw = true;
@@ -349,7 +349,7 @@ namespace TaiyouUI
 
         }
         public IntPtr FormHandle;
-        public TabNotepadForm RootControlReference;
+        public TaiyouForm RootControlReference;
 
         protected override void OnMouseDown(MouseEventArgs e)
         {
