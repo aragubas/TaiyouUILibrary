@@ -45,14 +45,13 @@ namespace TaiyouUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TabNotepadForm));
             this.TitlebarPanel = new System.Windows.Forms.Panel();
             this.WindowButtonsPanel = new System.Windows.Forms.Panel();
             this.FormMinimizeButton = new System.Windows.Forms.Button();
             this.FormMaximizeButton = new System.Windows.Forms.Button();
             this.FormCloseButton = new System.Windows.Forms.Button();
-            this.FormTitlebar = new MoveWindowLabel();
             this.FormControls = new System.Windows.Forms.Panel();
+            this.FormTitlebar = new TaiyouUI.MoveWindowLabel();
             this.TitlebarPanel.SuspendLayout();
             this.WindowButtonsPanel.SuspendLayout();
             this.SuspendLayout();
@@ -63,9 +62,9 @@ namespace TaiyouUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TitlebarPanel.Controls.Add(this.WindowButtonsPanel);
             this.TitlebarPanel.Controls.Add(this.FormTitlebar);
-            this.TitlebarPanel.Location = new System.Drawing.Point(23, 1);
+            this.TitlebarPanel.Location = new System.Drawing.Point(7, 1);
             this.TitlebarPanel.Name = "TitlebarPanel";
-            this.TitlebarPanel.Size = new System.Drawing.Size(638, 26);
+            this.TitlebarPanel.Size = new System.Drawing.Size(654, 26);
             this.TitlebarPanel.TabIndex = 5;
             // 
             // WindowButtonsPanel
@@ -74,9 +73,9 @@ namespace TaiyouUI
             this.WindowButtonsPanel.Controls.Add(this.FormMinimizeButton);
             this.WindowButtonsPanel.Controls.Add(this.FormMaximizeButton);
             this.WindowButtonsPanel.Controls.Add(this.FormCloseButton);
-            this.WindowButtonsPanel.Location = new System.Drawing.Point(521, 0);
+            this.WindowButtonsPanel.Location = new System.Drawing.Point(551, 0);
             this.WindowButtonsPanel.Name = "WindowButtonsPanel";
-            this.WindowButtonsPanel.Size = new System.Drawing.Size(111, 20);
+            this.WindowButtonsPanel.Size = new System.Drawing.Size(97, 20);
             this.WindowButtonsPanel.TabIndex = 3;
             // 
             // FormMinimizeButton
@@ -89,7 +88,7 @@ namespace TaiyouUI
             this.FormMinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FormMinimizeButton.Font = new System.Drawing.Font("Arial", 7.5F);
             this.FormMinimizeButton.ForeColor = System.Drawing.Color.White;
-            this.FormMinimizeButton.Location = new System.Drawing.Point(17, 0);
+            this.FormMinimizeButton.Location = new System.Drawing.Point(3, 0);
             this.FormMinimizeButton.Name = "FormMinimizeButton";
             this.FormMinimizeButton.Size = new System.Drawing.Size(25, 20);
             this.FormMinimizeButton.TabIndex = 0;
@@ -108,7 +107,7 @@ namespace TaiyouUI
             this.FormMaximizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FormMaximizeButton.Font = new System.Drawing.Font("Arial", 7.5F);
             this.FormMaximizeButton.ForeColor = System.Drawing.Color.White;
-            this.FormMaximizeButton.Location = new System.Drawing.Point(42, 0);
+            this.FormMaximizeButton.Location = new System.Drawing.Point(28, 0);
             this.FormMaximizeButton.Name = "FormMaximizeButton";
             this.FormMaximizeButton.Size = new System.Drawing.Size(25, 20);
             this.FormMaximizeButton.TabIndex = 0;
@@ -126,7 +125,7 @@ namespace TaiyouUI
             this.FormCloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FormCloseButton.Font = new System.Drawing.Font("Arial", 7.5F);
             this.FormCloseButton.ForeColor = System.Drawing.Color.White;
-            this.FormCloseButton.Location = new System.Drawing.Point(67, 0);
+            this.FormCloseButton.Location = new System.Drawing.Point(53, 0);
             this.FormCloseButton.Name = "FormCloseButton";
             this.FormCloseButton.Size = new System.Drawing.Size(44, 20);
             this.FormCloseButton.TabIndex = 0;
@@ -134,17 +133,6 @@ namespace TaiyouUI
             this.FormCloseButton.Text = "X";
             this.FormCloseButton.UseVisualStyleBackColor = false;
             this.FormCloseButton.Click += new System.EventHandler(this.FormCloseButton_Click);
-            // 
-            // FormTitlebar
-            // 
-            this.FormTitlebar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormTitlebar.Font = new System.Drawing.Font("Arial", 10F);
-            this.FormTitlebar.Location = new System.Drawing.Point(0, 0);
-            this.FormTitlebar.Name = "FormTitlebar";
-            this.FormTitlebar.Size = new System.Drawing.Size(638, 26);
-            this.FormTitlebar.TabIndex = 0;
-            this.FormTitlebar.Text = "TabNotepad";
-            this.FormTitlebar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormControls
             // 
@@ -156,6 +144,17 @@ namespace TaiyouUI
             this.FormControls.Size = new System.Drawing.Size(657, 391);
             this.FormControls.TabIndex = 0;
             this.FormControls.Validated += new System.EventHandler(this.FormControls_Validated);
+            // 
+            // FormTitlebar
+            // 
+            this.FormTitlebar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FormTitlebar.Font = new System.Drawing.Font("Arial", 10F);
+            this.FormTitlebar.Location = new System.Drawing.Point(0, 0);
+            this.FormTitlebar.Name = "FormTitlebar";
+            this.FormTitlebar.Size = new System.Drawing.Size(654, 26);
+            this.FormTitlebar.TabIndex = 0;
+            this.FormTitlebar.Text = "TabNotepad";
+            this.FormTitlebar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TabNotepadForm
             // 
@@ -170,7 +169,6 @@ namespace TaiyouUI
             this.Font = new System.Drawing.Font("Arial", 8.25F);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TabNotepadForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Untitled TabNotepad Form";
