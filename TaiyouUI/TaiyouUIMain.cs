@@ -112,6 +112,8 @@ namespace TaiyouUI
             SolidBrush ForegroundColor = new SolidBrush(ForeColor);
             SolidBrush BackgroundColor = new SolidBrush(BackColor);
 
+            StringFormat ceira = new StringFormat();
+
             // Only draw background if necessary
             if (this.SelectedItems.Contains(e.Item))
             {
@@ -373,7 +375,6 @@ namespace TaiyouUI
         public taiyouTextBox()
         {
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-
         }
 
         public void LoadTheme()
@@ -424,6 +425,7 @@ namespace TaiyouUI
         /// <param name="LineNumber">0 based location of line</param>
         public void GotoLine(int LineNumber)
         {
+            Console.WriteLine("TaiyouUI.RichTextBox is a not working function don't use it.");
             int Index = GetFirstCharIndexFromLine(LineNumber - 1);
             Select(LineNumber, 0);
 
@@ -587,7 +589,7 @@ namespace TaiyouUI
         // Load theme after being added to user layout
         private bool ThemeLoaded = false;
         protected override void OnLayout(LayoutEventArgs e)
-        {
+        { 
             base.OnLayout(e);
 
             if (!ThemeLoaded)
@@ -627,7 +629,7 @@ namespace TaiyouUI
     {
         public taiyouGroupBox()
         {
-            this.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FlatStyle = FlatStyle.Flat;
         }
 
         public void LoadTheme()
